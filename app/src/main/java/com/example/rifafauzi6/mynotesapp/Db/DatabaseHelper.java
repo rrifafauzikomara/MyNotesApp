@@ -6,11 +6,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.rifafauzi6.mynotesapp.Db.DatabaseContract.NoteColumns;
 
-
-/**
- * Created by sidiqpermana on 11/23/16.
- */
-
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static String DATABASE_NAME = "dbnoteapp";

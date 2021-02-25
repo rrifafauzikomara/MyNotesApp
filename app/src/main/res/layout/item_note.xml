@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp">
-    <android.support.v7.widget.CardView
+
+    <androidx.cardview.widget.CardView
         android:id="@+id/cv_item_note"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,5 +45,5 @@
                 android:text="@string/description"
                 android:id="@+id/tv_item_description"/>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>

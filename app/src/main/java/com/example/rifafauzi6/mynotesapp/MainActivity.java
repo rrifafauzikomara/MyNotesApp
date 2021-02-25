@@ -1,19 +1,20 @@
 package com.example.rifafauzi6.mynotesapp;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ProgressBar;
 
 import com.example.rifafauzi6.mynotesapp.Adapter.NoteAdapter;
 import com.example.rifafauzi6.mynotesapp.Db.NoteHelper;
 import com.example.rifafauzi6.mynotesapp.Entity.Note;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    private class LoadNoteAsync extends AsyncTask<Void, Void, ArrayList<Note>>{
+    private class LoadNoteAsync extends AsyncTask<Void, Void, ArrayList<Note>> {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
